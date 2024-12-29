@@ -8,121 +8,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-100">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-blue-600">Nelson</div>
-                <div class="space-x-6">
-                    <a href="#about" class="hover:text-blue-600">About</a>
-                    <a href="#skills" class="hover:text-blue-600">Skills</a>
-                    <a href="#projects" class="hover:text-blue-600">Projects</a>
-                    <a href="#contact" class="hover:text-blue-600">Contact</a>
+    <!-- Hero Section with Navigation -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white min-h-screen relative">
+        <nav class="absolute w-full top-0 bg-white/10 backdrop-blur-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="text-2xl font-bold">Nelson</div>
+                    <div class="space-x-6">
+                        <a href="#projects" class="text-white hover:text-blue-200">Projects</a>
+                        <a href="#contact" class="text-white hover:text-blue-200">Contact</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white min-h-screen flex items-center">
-        <div class="container mx-auto px-4">
+        </nav>
+        <div class="container mx-auto px-4 h-screen flex items-center justify-center">
             <div class="text-center">
                 <h1 class="text-5xl font-bold mb-4">Nelson</h1>
                 <p class="text-2xl mb-8">Full Stack Developer</p>
                 <p class="text-xl mb-8">Business Information Technology Graduate</p>
-                <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition duration-300">Get In Touch</a>
             </div>
         </div>
     </header>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
-            <div class="max-w-3xl mx-auto text-gray-600">
-                <p class="mb-6">I'm a passionate Full Stack Developer with expertise in both frontend and backend technologies. With a degree in Business Information Technology, I combine technical skills with business acumen to create effective digital solutions.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Frontend Skills -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-xl font-bold mb-4 text-blue-600">Frontend Development</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>JavaScript (ES6+)</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>HTML5</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>CSS3</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Tailwind CSS</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Bootstrap</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Vue.js</li>
-                    </ul>
-                </div>
-                <!-- Backend Skills -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-xl font-bold mb-4 text-purple-600">Backend Development</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Python</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Django</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>RESTful APIs</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Database Management</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- E-commerce Project -->
+                <!-- Project 1: E-Commerce Platform -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://via.placeholder.com/400x250" alt="E-commerce Project" class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="E-commerce Dashboard" 
+                         class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
-                        <p class="text-gray-600 mb-4">A full-stack e-commerce solution built with Django and Vue.js</p>
+                        <h3 class="text-xl font-bold mb-2">Modern E-Commerce</h3>
+                        <p class="text-gray-600 mb-4">Full-featured online store with inventory management, payment processing, and analytics.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Django</span>
                             <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Vue.js</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Stripe</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">View Project →</a>
                     </div>
                 </div>
 
-                <!-- Task Management App -->
+                <!-- Project 2: Task Management -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://via.placeholder.com/400x250" alt="Task Management App" class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Task Management System" 
+                         class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Task Management App</h3>
-                        <p class="text-gray-600 mb-4">A collaborative task management tool with real-time updates</p>
+                        <h3 class="text-xl font-bold mb-2">TaskFlow Pro</h3>
+                        <p class="text-gray-600 mb-4">Collaborative task management with real-time updates and team analytics.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">JavaScript</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">Redis</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">Django REST</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">React</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">View Project →</a>
                     </div>
                 </div>
 
-                <!-- Portfolio Website -->
+                <!-- Project 3: Learning Platform -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://via.placeholder.com/400x250" alt="Portfolio Website" class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Learning Platform" 
+                         class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
-                        <p class="text-gray-600 mb-4">A responsive portfolio website built with modern technologies</p>
+                        <h3 class="text-xl font-bold mb-2">EduTech Hub</h3>
+                        <p class="text-gray-600 mb-4">Interactive learning platform with video courses, quizzes, and progress tracking.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-cyan-100 text-cyan-600 rounded-full text-sm">Tailwind</span>
-                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">HTML5</span>
-                            <span class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm">CSS3</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Django</span>
+                            <span class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm">Vue.js</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">AWS</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -135,15 +92,9 @@
             <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
             <div class="max-w-lg mx-auto">
                 <form class="space-y-6">
-                    <div>
-                        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
-                    </div>
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
                     <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
                 </form>
             </div>
