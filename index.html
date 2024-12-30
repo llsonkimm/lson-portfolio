@@ -54,30 +54,9 @@
 
         .project-image {
             width: 100%;
-            height: 250px;
+            height: 300px;
             object-fit: cover;
             border-bottom: 1px solid var(--lightest-slate);
-        }
-
-        .project-image-container {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-image-container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(100, 255, 218, 0.1);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .project-card:hover .project-image-container::after {
-            opacity: 1;
         }
 
         .tech-tag {
@@ -86,8 +65,8 @@
             padding: 4px 12px;
             border-radius: 16px;
             font-size: 0.875rem;
-            display: inline-block;
             margin: 0.25rem;
+            display: inline-block;
         }
 
         .btn-outline-green {
@@ -109,9 +88,6 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
         }
 
         .social-links::after {
@@ -153,8 +129,8 @@
             <h1 class="hero-title mb-3">Nelson.</h1>
             <h2 class="display-4 text-light-slate mb-4">I build things for the web.</h2>
             <p class="col-md-6 mb-5">
-                Full-stack developer crafting exceptional digital experiences. 
-                Specializing in creating responsive, user-centered web applications.
+                Full-stack developer specializing in creating responsive, user-centered web applications.
+                Currently focused on building accessible, human-centered products.
             </p>
             <a href="#projects" class="btn btn-outline-green">View My Work</a>
         </div>
@@ -166,15 +142,16 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="project-card">
-                        <div class="project-image-container">
-                            <img src="https://imgur.com/a/FZhRM0L" 
-                                 alt="Kenyan Smiles Website" 
-                                 class="project-image">
-                        </div>
+                        <img src="https://i.imgur.com/1X5PK4v.png" 
+                             alt="Kenyan Smiles Website" 
+                             class="project-image"
+                             loading="lazy">
                         <div class="p-4">
                             <h3 class="text-lightest-slate">Kenyan Smiles Dental Clinic</h3>
                             <p class="my-4">
-                                I developed a comprehensive travel platform, kenyansmiles.com, aimed at providing users with detailed information on Kenyan tourism, including cultural tours, off-the-beaten-path destinations, and travel guides.
+                                A professional dental clinic website featuring service listings, 
+                                patient testimonials, and dental care information. Built with modern 
+                                web technologies focusing on user experience and accessibility.
                             </p>
                             <div class="d-flex flex-wrap mb-4">
                                 <span class="tech-tag">WordPress</span>
@@ -183,7 +160,9 @@
                                 <span class="tech-tag">CSS3</span>
                                 <span class="tech-tag">Responsive Design</span>
                             </div>
-                            <a href="https://www.kenyansmiles.com" target="_blank" class="btn btn-outline-green">
+                            <a href="https://www.kenyansmiles.com" 
+                               target="_blank" 
+                               class="btn btn-outline-green">
                                 Visit Website
                             </a>
                         </div>
@@ -200,15 +179,15 @@
                 Currently available for freelance projects and full-time opportunities.
                 Let's discuss how we can work together!
             </p>
-            <a href="mailto:kimcheruiyot100@gmail.com" class="btn btn-outline-green">Say Hello</a>
+            <a href="mailto:your.email@example.com" class="btn btn-outline-green">Say Hello</a>
         </div>
     </section>
 
     <div class="social-links">
-        <a href="https://github.com/llsonkimm" target="_blank" class="social-icon">
+        <a href="https://github.com/yourusername" target="_blank" class="social-icon">
             <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/nelson-cheruiyotportfollio/" target="_blank" class="social-icon">
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon">
             <i class="fab fa-linkedin-in"></i>
         </a>
     </div>
